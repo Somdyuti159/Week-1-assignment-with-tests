@@ -11,9 +11,11 @@ function isAnagram(str1, str2) {
   var n1=str1.length;
   var n2=str2.length;
   
-  if(n1!=n2) 
+  if(n1!=n2) {
     return false;
-  
+  }
+  str1=str1.toLowerCase();
+  str2=str2.toLowerCase();
   const arr1 = str1.split("");
   const arr2 = str2.split("");
   arr1.sort();
